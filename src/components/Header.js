@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Header.module.scss';
 
 const Header = (props) => {
@@ -7,6 +8,7 @@ const Header = (props) => {
   return (
     <header>
       <i className={styles.backButton} />
+      <h1>{ heading }</h1>
       <div className={styles.icon}>
         <i className={styles.mic} />
         <i className={styles.settings} />
@@ -16,3 +18,7 @@ const Header = (props) => {
 };
 
 export default Header;
+
+Header.propTypes = {
+  heading: PropTypes.string.isRequired,
+};

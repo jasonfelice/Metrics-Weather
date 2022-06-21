@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 const Home = () => (
   <>
-    <Header />
+    <Header heading="Weather" />
     <div>This is the Home Page!</div>
   </>
 );
