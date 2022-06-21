@@ -7,9 +7,9 @@ const Header = (props) => {
 
   return (
     <header>
-      <i className={styles.backButton} />
+      <i className={styles.previous} />
       <h1>{ heading }</h1>
-      <div className={styles.icon}>
+      <div className={styles.icons}>
         <i className={styles.mic} />
         <i className={styles.settings} />
       </div>
