@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
     <header>
       <i className={styles.previous} />
-      <h1>{ heading }</h1>
+      <h3>{ heading }</h3>
       <div className={styles.icons}>
         <i className={styles.mic} />
         <i className={styles.settings} />

@@ -1,0 +1,36 @@
+$primary: #fd5092;
+$secondary: #ec4c8a; 
+$secondary2: #d63e79; 
+
+.wrapper {
+  background-color: $secondary2;
+  position: relative;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapper:nth-child(3n-2) {
+  background-color: $secondary;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  span {
+    align-self: flex-end;
+  }
+}
+
+.right_arrow {
+  background: url(../assets/icons/right_arrow.png) no-repeat center center/cover;
+  width: 20px;
+  height: 20px;
+  display: block;
+  filter: invert(1);
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
