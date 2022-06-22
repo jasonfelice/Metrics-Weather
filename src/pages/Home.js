@@ -1,22 +1,30 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Header from '../components/Header';
 import Country from '../components/Country';
-import jp from '../data/maps/jp.png';
 import Heading from '../components/Heading';
 
-const Home = () => (
-  <>
-    <Header heading="Weather" />
-    <section>
-      <Heading home title="Metrics | Weather" />
-      <div className="countries">
-        <Country number={4} name="Japan" vector={jp} />
-        <Country number={4} name="Japan" vector={jp} />
-        <Country number={4} name="Japan" vector={jp} />
-        <Country number={4} name="Japan" vector={jp} />
-      </div>
-    </section>
-  </>
-);
+const Home = () => {
+  const countries = useSelector((state) => state.updateCountries);
+
+  return (
+    <>
+      <Header heading="Weather" />
+      <section>
+        <Heading home title="Metrics | Weather" />
+        <div className="countries">
+          { countries.map((country) => (
+            <Country
+              key={country.name}
+              number={country.cities.length}
+              name={country.name}
+              vector={country.map}
+            />
+          ))}
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default Home;

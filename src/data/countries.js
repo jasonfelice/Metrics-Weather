@@ -328,7 +328,7 @@ const countries = [
   },
   {
     region: 'oceania',
-    name: 'New Zealand',
+    name: 'samoa',
     map: ws,
     cities: [
       {
@@ -350,7 +350,7 @@ const countries = [
   },
   {
     region: 'south-america',
-    name: 'New Zealand',
+    name: 'Brazil',
     map: br,
     cities: [
       {

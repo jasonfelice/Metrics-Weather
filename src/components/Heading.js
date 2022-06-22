@@ -1,8 +1,11 @@
 import React from 'react';
+import { useDispatch } from 'react-redux/es/exports';
 import PropTypes from 'prop-types';
 import styles from './Heading.module.scss';
+import { filterCountries } from '../redux/countries/countries';
 
 const Heading = (props) => {
+  const dispatch = useDispatch();
   const { title, number, home } = props;
   const regions = [
     {
@@ -36,7 +39,7 @@ const Heading = (props) => {
       <h1>{title}</h1>
       {
         (home) ? (
-          <select defaultValue="all" className={styles.filter}>
+          <select onChange={(e) => dispatch(filterCountries(e.target.value))} defaultValue="all" className={styles.filter}>
             <option value="all" disabled>__Filter Countries by Region__</option>
             {regions.map((region) => (
               <option
