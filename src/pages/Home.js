@@ -8,7 +8,7 @@ const Home = () => (
   <>
     <Header heading="Weather" />
     <section>
-      <Heading title="Weather" />
+      <Heading home title="Metrics | Weather" />
       <div className="countries">
         <Country number={4} name="Japan" vector={jp} />
         <Country number={4} name="Japan" vector={jp} />
