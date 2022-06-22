@@ -63,7 +63,7 @@ const countries = [
     ],
   },
   {
-    region: 'asia',
+    region: 'africa',
     name: 'Kenya',
     map: ke,
     cities: [
