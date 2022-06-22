@@ -7,7 +7,8 @@ $secondary2: #d63e79;
   position: relative;
   padding: 0.5rem;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper:nth-child(3n-2) {
@@ -18,6 +19,9 @@ $secondary2: #d63e79;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 3px;
 
   span {
     align-self: flex-end;
@@ -33,4 +37,12 @@ $secondary2: #d63e79;
   position: absolute;
   right: 5px;
   top: 5px;
+}
+
+.map {
+  display: block;
+  min-width: 100px;
+  min-height: 150px;
+  filter: brightness(0);
+  opacity: 0.2;
 }

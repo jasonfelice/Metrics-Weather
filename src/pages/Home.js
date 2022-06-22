@@ -2,12 +2,13 @@ import React from 'react';
 import Header from '../components/Header';
 import Country from '../components/Country';
 import jp from '../data/maps/jp.png';
+import Heading from '../components/Heading';
 
 const Home = () => (
   <>
     <Header heading="Weather" />
     <section>
-      <div>This is the Home Page!</div>
+      <Heading title="Weather" />
       <div className="countries">
         <Country number={4} name="Japan" vector={jp} />
         <Country number={4} name="Japan" vector={jp} />
