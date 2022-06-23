@@ -8,7 +8,7 @@
 - webpack
 - React
 
-## Live (Comming Soon)
+## Live
 [Preview](https://venerable-cranachan-299537.netlify.app/)
 
 
