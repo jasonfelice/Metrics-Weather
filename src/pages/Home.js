@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <>
-      <Header heading="Weather" />
+      <Header previous="" heading="Weather" />
       <section>
         <Heading home title="Metrics | Weather" />
         <div className="countries">
@@ -19,6 +19,7 @@ const Home = () => {
               number={country.cities.length}
               name={country.name}
               vector={country.map}
+              cities={country.cities}
             />
           ))}
         </div>

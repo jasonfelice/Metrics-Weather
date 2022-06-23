@@ -1,13 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 const Header = (props) => {
-  const { heading } = props;
+  const { heading, previous } = props;
 
   return (
     <header>
-      <i className={styles.previous} />
+      {
+          (previous) ? (
+            <Link to={`/${previous}`}>
+              <i className={styles.previous} />
+            </Link>
+          ) : (
+            <span />
+          )
+        }
+
       <h3>{ heading }</h3>
       <div className={styles.icons}>
         <i className={styles.mic} />
@@ -21,4 +31,5 @@ export default Header;
 
 Header.propTypes = {
   heading: PropTypes.string.isRequired,
+  previous: PropTypes.string.isRequired,
 };

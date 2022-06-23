@@ -1,6 +1,9 @@
 $primary: #fd5092;
 
 .heading {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   background: url(../assets/worldmap.png) no-repeat center center/cover;
   background-color: $primary;
   background-size: 100% 100%;
@@ -11,6 +14,7 @@ $primary: #fd5092;
   justify-content: center;
   align-items: center;
   text-shadow: 0 0 5px #555;
+  box-shadow: 0 1px 5px rgba(85, 85, 85, 0.342);
 
   h1 {
     font-size: 2rem;

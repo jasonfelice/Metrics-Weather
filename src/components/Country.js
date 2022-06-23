@@ -1,21 +1,26 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import styles from './Country.module.scss';
+import { getCities } from '../redux/cities/cities';
 
 const Country = (props) => {
-  const { name, number, vector } = props;
+  const {
+    name, number, vector, cities,
+  } = props;
   const map = { background: `url(${vector}) no-repeat center center/cover` };
+  const dispatch = useDispatch();
 
   return (
-    <div className={styles.wrapper}>
-      <i className={styles.right_arrow} />
+    <Link to="/cities" onClick={() => dispatch(getCities(cities))} className={styles.wrapper}>
+      <i className="right_arrow" />
       <i style={map} className={styles.map} />
       <div className={styles.info}>
         <h2>{name}</h2>
         <span>{number}</span>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -25,4 +30,5 @@ Country.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.number.isRequired,
   vector: PropTypes.string.isRequired,
+  cities: PropTypes.instanceOf(Array).isRequired,
 };

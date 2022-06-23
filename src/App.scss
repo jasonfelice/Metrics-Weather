@@ -2,6 +2,7 @@
 
 $primary: #fd5092;
 $secondary: #ec4c8a; 
+$secondary2: #d63e79; 
 $text: #fff;
 $trird: #fdff00;
 
@@ -25,4 +26,31 @@ $trird: #fdff00;
   @media only screen and (min-width: 900px) {
     grid-template-columns: repeat(6, 1fr);
   }
+}
+
+.cities_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cities_wrapper a {
+  text-decoration: none;
+  background-color: $secondary;
+}
+
+.cities_wrapper a:nth-child(even) {
+  background-color: $secondary2;
+}
+
+// Utility Classes
+
+.right_arrow {
+  background: url(./assets/icons/right_arrow.png) no-repeat center center/cover;
+  width: 20px;
+  height: 20px;
+  display: block;
+  filter: invert(1);
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
