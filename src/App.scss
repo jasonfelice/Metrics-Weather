@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
 $primary: #fd5092;
-$secondary: #ec4c8a; 
-$secondary2: #d63e79; 
+$secondary: #ec4c8a;
+$secondary2: #d63e79;
 $text: #fff;
 $trird: #fdff00;
-
 
 * {
   margin: 0;
@@ -56,12 +55,12 @@ body {
     padding: 1rem 0.5rem;
     display: flex;
     text-align: center;
-    
+
     span:nth-child(2) {
       font-size: 1.2rem;
     }
   }
-  
+
   li:nth-child(1) {
     background-color: $secondary2;
     grid-column: 1 / 3;
