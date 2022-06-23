@@ -1,7 +1,12 @@
 import axios from 'axios';
 
 const getWeather = (payload) => ({ type: 'GET_WEATHER', payload });
-const initialState = {};
+const initialState = {
+  name: 'area',
+  weather: [{ main: '', description: '' }],
+  main: { temp: '', pressure: '', humidity: '' },
+  wind: { speed: '' },
+};
 const url = 'https://api.openweathermap.org/data/2.5/weather?';
 const apiKey = 'bbb469513dcaac6028a1edaa06809cc5';
 
