@@ -10,7 +10,7 @@ const City = (props) => {
     <Link to="/details" className={styles.city}>
       <span>{title}</span>
       <div className={styles.info}>
-        <span>AQI: 5</span>
+        <span>AQI: 1</span>
         <i className="right_arrow" />
       </div>
     </Link>

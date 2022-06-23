@@ -15,6 +15,10 @@ $trird: #fdff00;
   color: $text;
 }
 
+body {
+  background-color: $primary;
+}
+
 .countries {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
