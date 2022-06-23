@@ -9,7 +9,7 @@
 - React
 
 ## Live (Comming Soon)
-[Preview](#)
+[Preview](https://venerable-cranachan-299537.netlify.app/)
 
 
 ## Install
