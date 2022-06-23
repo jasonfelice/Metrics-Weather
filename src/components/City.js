@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux/es/exports';
 import styles from './City.module.scss';
+import { fetchWeather } from '../redux/weather/weather';
 
 const City = (props) => {
-  const { title } = props;
+  const { title, lat, long } = props;
+  const dispatch = useDispatch();
 
   return (
-    <Link to="/details" className={styles.city}>
+    <Link onClick={() => dispatch(fetchWeather({ lat, long }))} to="/details" className={styles.city}>
       <span>{title}</span>
       <div className={styles.info}>
         <span>AQI: 1</span>
@@ -21,4 +24,6 @@ export default City;
 
 City.propTypes = {
   title: PropTypes.string.isRequired,
+  lat: PropTypes.string.isRequired,
+  long: PropTypes.string.isRequired,
 };

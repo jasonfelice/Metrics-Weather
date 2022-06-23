@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import foo from './weather/weather';
+import weather from './weather/weather';
 import updateCountries from './countries/countries';
 import updateCities from './cities/cities';
 
 export default configureStore({
   reducer: {
-    foo,
+    weather,
     updateCountries,
     updateCities,
   },
