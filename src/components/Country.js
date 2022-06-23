@@ -17,7 +17,7 @@ const Country = (props) => {
       <i className="right_arrow" />
       <i style={map} className={styles.map} />
       <div className={styles.info}>
-        <h2>{name}</h2>
+        <h3>{name}</h3>
         <span>{number}</span>
       </div>
     </Link>
