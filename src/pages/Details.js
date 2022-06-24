@@ -19,7 +19,7 @@ const Details = () => {
           <li>{`Wind Speed: ${weather.wind.speed} knots`}</li>
           <li>{`Temprature: ${weather.main.temp} K`}</li>
           <li>{`Pressure: ${weather.main.pressure}`}</li>
-          <li>{`Pressure: ${weather.main.humidity}`}</li>
+          <li>{`Humidity: ${weather.main.humidity}`}</li>
         </ul>
       </section>
     </>
