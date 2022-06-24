@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux/es/exports';
+import { useDispatch } from 'react-redux';
 import styles from './City.module.scss';
 import { fetchWeather } from '../redux/weather/weather';
 

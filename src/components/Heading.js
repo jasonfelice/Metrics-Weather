@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux/es/exports';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './Heading.module.scss';
 import { filterCountries } from '../redux/countries/countries';
