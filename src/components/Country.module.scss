@@ -1,0 +1,37 @@
+$primary: #fd5092;
+$secondary: #ec4c8a;
+$secondary2: #d63e79;
+
+.wrapper {
+  background-color: $secondary2;
+  position: relative;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper:nth-child(3n-2) {
+  background-color: $secondary;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 3px;
+
+  span {
+    align-self: flex-end;
+  }
+}
+
+.map {
+  display: block;
+  min-width: 158px;
+  min-height: 150px;
+  filter: brightness(0);
+  opacity: 0.2;
+}

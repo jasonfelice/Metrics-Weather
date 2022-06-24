@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create header Render without errors 1`] = `
+<header>
+  <span />
+  <h3>
+    test
+  </h3>
+  <div
+    className="icons"
+  >
+    <i
+      className="mic"
+    />
+    <i
+      className="settings"
+    />
+  </div>
+</header>
+`;

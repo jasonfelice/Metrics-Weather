@@ -1,0 +1,16 @@
+.city {
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    position: static;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
