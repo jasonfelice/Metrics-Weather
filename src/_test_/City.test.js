@@ -1,28 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import '@testing-library/jest-dom';
 import renderer from 'react-test-renderer';
-import { render, screen } from '@testing-library/react';
-import Header from '../components/Header';
+import { Provider } from 'react-redux';
+import store from '../redux/configureStore';
+import City from '../components/City';
 
-describe('Create header', () => {
-  it('Render without errors', () => {
-    const tree = renderer
+describe('City component test', () => {
+  it('Renders City', () => {
+    const city = renderer
       .create(
-        <Router>
-          <Header heading="test" previous="" />
-        </Router>,
-      ).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it('Renders the elements', () => {
-    render(
-      <Router>
-        <Header heading="test" previous="" />
-      </Router>,
-    );
-    const element = screen.getByText('testu');
-    expect(element).toBeInTheDocument();
+        <Provider store={store}>
+          <City title="New York" lat="50" long="50" />
+        </Provider>,
+      )
+      .toJSON();
+    expect(city).toMatchSnapshot();
   });
 });
