@@ -35,6 +35,18 @@ To get a local copy up and running follow these simple example steps.
 <a href = "https://github.com/jasonfelice"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
 </p>
 
+# Attributions
+
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+- Mic icons created by [srip - Flaticon](https://www.flaticon.com/free-icons/mic).
+- Previous icons created by [Retinaicons - Flaticon](https://www.flaticon.com/free-icons/previous).
+- Favicon icons created by [iconixar - Flaticon](https://www.flaticon.com/free-icons/rain).
+- Next icons created by th [studio - Flaticon](https://www.flaticon.com/free-icons/next).
+- [World map](https://www.pngall.com/world-map-png/download/25355).
+- All the [country maps](https://vemaps.com/).
+
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
