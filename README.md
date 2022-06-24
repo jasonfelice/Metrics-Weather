@@ -1,16 +1,18 @@
-# Air Pollution
+# Metrics - Weather
+This application has 3 pages, a `Home` with a list of countries that can be filtered by region, a `Cities` page with a list of cities for the selected country, and finally a `Details` page with the weather details. The app gets the data from the [OpenWeather](https://openweathermap.org/api).
+
+<p align="center"><img src="./preview/preview.png"></p>
 
 ## Built With
 
 - HTML
 - CSS
 - JavaScript
-- webpack
 - React
+- Redux
 
 ## Live
 [Preview](https://venerable-cranachan-299537.netlify.app/)
-
 
 ## Install
 
