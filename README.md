@@ -13,7 +13,6 @@ This application has 3 pages, a `Home` with a list of countries that can be filt
 
 ## Live
 [Preview](https://venerable-cranachan-299537.netlify.app/)
-[Presentation Video](https://youtu.be/vmwuaAnPmLM)
 
 ## Install
 
